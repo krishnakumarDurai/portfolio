@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #420be6;
+            color: #fff;
+            text-align: center;
+            padding: 2.5rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 3 rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 200px; /* Adjust the size as needed */
+            height: 200px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 25px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #e3eedc;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #431010;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #e7d4d4;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="Dhanaimage.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>DHANANCHEZHIYAN R</h1>
+            <h3><p>ASSISTANT PROFESSOR</p></h3>
+            <h4><P>PG & Research Department of Computer Science,
+               Dr. Ambedkar Government Arts College(A)
+               Vyasarpadi, Chennai-600 039</P></h4>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Research">Research</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm Working as an Assistant Professor in Dr. Ambedkar Government Arts College(A), and technology enthusiast who is passionate about helping organizations protect their data and create secure online environments. I'm driven by the desire to put technology to work for the greater good and empower individuals and businesses to benefit from the digital revolution. With over 10 years of experience in the field, I'm dedicated to staying up to date with the latest trends and innovations in the <a href="https://github.com/DhananchezhiyanRavi" traget="_target">Teaching </a> landscape. I'm also committed to helping others learn more about the importance of online security and how to stay safe online..</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p> Univeristy of Madras-Doctor of Philosophy(Pursuing)</p>
+            <p> Univeristy of Madras-Master of Philosophy in CS</p>
+            <p> Univeristy of Madras-Master of Computer Science</p>
+            <p> Univeristy of Madras-Bachelor of Computer Science</p>
+
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>java</li>
+                <li>c++</li>
+                <li>Java script</li>
+                <li>CyberSecurity</li>
+                <li>Internet of Things</li>
+                <li>Cloud Computing</li>
+                <li>Python</li>
+                <li>Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Research">
+        <div class="section-content">
+            <h2>Research</h2>
+            <h1> Atricles Published</h1>
+            <ul>
+                <li><a href="#">Data Mining in the ages of BIG DATA</a></li>
+                <li><a href="#">Artificial Intelligene in Defence Transforming Military Strategy and Weaponary</a></li>
+                <li><a href="#">A Literature Review on Predicting the Occurance of COVID-19 Based on Machine Learning Algorithms</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="./Dhanaresumenm.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DHANANCHEZHIYAN R</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
